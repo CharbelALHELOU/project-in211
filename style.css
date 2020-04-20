@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 a{
   color: white !important;
 }
@@ -239,6 +244,25 @@ header > .container {
     transform: scaleX(1);
   }
 }
+
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 166, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 2vh rgba(255, 166, 0, 0.2);
+  }
+}
+
+.pulse
+{
+  border-radius: 50%;
+  animation: shadow-pulse 950ms infinite;
+}
+
+
 
 
 

@@ -15,16 +15,11 @@ $(function () {
 	});
 });
 
-function scrollToID( theID ) {
-    document.querySelector(theID).scrollIntoView({behavior: 'smooth'});
-  }
+const typewriter = new Typewriter('#msg', {
+loop: false, delay: 60,
+});
 
+typewriter.changeCursor(' ').typeString('Hello!').deleteAll().typeString('Charbel Alhelou').start();
 
-  const typewriter = new Typewriter('#msg', {
-	loop: false, delay: 60,
-  });
-
-  typewriter.changeCursor(' ').typeString('Hello!').deleteAll().typeString('Charbel Alhelou').start();
-
-  const t2 = new Typewriter('#msg2', {loop:false,delay:60})
-  t2.changeCursor(' ').pauseFor(2000).typeString('A 4th year student at ENSTA Paris').start();
+const t2 = new Typewriter('#msg2', {loop:false,delay:60})
+t2.changeCursor(' ').pauseFor(2000).typeString('A 4th year student at ENSTA Paris').start();
