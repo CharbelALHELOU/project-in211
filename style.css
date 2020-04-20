@@ -9,8 +9,8 @@ p{
 }
 
 .btn{
-  width:100px;
-  padding: 5px 0 !important;
+  widows: 100px;
+  padding: 1px 12px 1px 12px!important;
   border: 1px solid;
   position: relative;
   overflow: hidden;
@@ -62,7 +62,7 @@ header > .container {
 .navbar-brand{
   position: absolute;
   width: 100%;
-  max-width: 36vh;
+  max-width: 30vh;
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
@@ -125,8 +125,9 @@ header > .container {
   opacity: 0;
   transform: scale(0);
   transition: opacity 450ms;
-  font-size: xx-large;
   text-transform: uppercase;
+  padding: 0;
+  font-size: 4vh;
 }
 
 .nav-list.open{
@@ -134,7 +135,7 @@ header > .container {
   transform: scale(1);
 }
 
-.hero-text{
+.hero-text {
   position: absolute;
   top: 75%;
   left: 50%;
@@ -143,13 +144,20 @@ header > .container {
   text-transform: uppercase;
 }
 
-.download-text{
-  position: absolute;
-  top: 90vh;
-  left: 50%;
-  transform: translate(-50%,-70%);
-  text-align: center;
-  text-transform: uppercase;
+.hero-text > h1{
+  font-size: 6vh;
+  color: orange;
+}
+
+.hero-text > p{
+  font-size: 3vh;
+}
+
+.hero-text > a{
+  position: relative;
+  top: 20vh;
+  font-size: 2vh;
+  padding-top: 15vh;
 }
 /* -------------------------- about section -------------------------- */
 .section-heading h4{
@@ -162,15 +170,7 @@ header > .container {
 
 
 /* -------------------------- responsive -------------------------- */
-/*@media (max-height: 650px){
-  .navbar-brand{
-    top: 15%;
-  }
-  .hero-text{
-    top: 80%;
-  }
-}
-*/
+
 @media (min-width: 576px){
   .hamburger-menu{
     top: 35px;
