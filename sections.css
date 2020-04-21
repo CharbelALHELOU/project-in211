@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a{
+  color: white !important;
+}
+
+body{
+    font-family: 'Jura', sans-serif;
+  }
+
+/* header*/
+#home{
+    background: linear-gradient(rgb(0, 42, 65,.8),rgb(0, 42, 65,.8)) , url(bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+#intro{
+    padding-top: 10vh;
+    background-size: cover;
+    height: 99%;
+}
+
+
+#download{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+}
+
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 30, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 2vh rgba(255, 123, 0, 0.2);
+  }
+}
+
+.pulse
+{
+  border-radius: 50%;
+  animation: shadow-pulse 950ms infinite;
+}
+
+#avatar{
+    position: relative;
+    align-items: center;
+    max-height: 50vh;
+}
+
+.btn{
+    widows: 100px;
+    padding: 1px 12px 1px 12px!important;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.5), transparent);
+    transition: all 550ms;
+  }
+  
+  .btn:hover::before{
+    top: 100%;
+    left: 100%;
+  }
+
+#msg{
+    font-size: 8vw;
+}
+
+/* navbar*/

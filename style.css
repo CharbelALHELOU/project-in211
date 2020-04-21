@@ -73,8 +73,7 @@ body{
 header{
   width: 100%;
   height: 100vh;
-  background: linear-gradient( rgba(16,29,44,.95), rgba(16,29,44,.95)), 
-      url("https://static.timesofisrael.com/blogs/uploads/2019/10/bhanu.jpg");
+  background: linear-gradient( rgba(16,29,44,.95), rgba(16,29,44,.95));
   background-size: cover;
   position: relative;
 }
@@ -141,8 +140,7 @@ header > .container {
   width: 100%;
   height: 100vh;
   list-style: none;
-  background: linear-gradient( rgba(16,29,44,.95), rgba(16,29,44,.95)), 
-      url("https://static.timesofisrael.com/blogs/uploads/2019/10/bhanu.jpg");
+  background: linear-gradient( rgba(16,29,44,.95), rgba(16,29,44,.95));
   background-size: cover;
   z-index: 900;
   display: flex;
@@ -184,14 +182,6 @@ header > .container {
   top: 20vh;
   font-size: 2vh;
   padding-top: 15vh;
-}
-/* -------------------------- about section -------------------------- */
-.section-heading h4{
-  text-transform: uppercase;
-  color: #101D2C;
-  line-height: 0;
-  font-weight: 300;
-  letter-spacing: 1px;
 }
 
 
@@ -267,12 +257,3 @@ header > .container {
 }
 
 
-
-
-
-
-/* -------------------------- skills -------------------------- */
-
-.skills{
-  background-color: rgba(16,29,44,.95) ;
-}
