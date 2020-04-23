@@ -19,7 +19,19 @@ const typewriter = new Typewriter('#msg', {
 loop: false, delay: 60,
 });
 
-typewriter.changeCursor(' ').typeString('Hello!').deleteAll().typeString('Charbel Alhelou').start();
+typewriter.changeCursor(' ').typeString('Charbel Alhelou').start();
 
 const t2 = new Typewriter('#msg2', {loop:false,delay:60})
 t2.changeCursor(' ').pauseFor(2000).typeString('A 4th year student at ENSTA Paris').start();
+
+let navbar = $(".navbar");
+
+$(window).scroll(function () {
+  // get the complete hight of window
+  let oTop = $(".section-2").offset().top - window.innerHeight;
+  if ($(window).scrollTop() > oTop) {
+    navbar.addClass("sticky");
+  } else {
+    navbar.removeClass("sticky");
+  }
+});
